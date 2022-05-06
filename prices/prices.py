@@ -1,4 +1,4 @@
- # format
+# format
 # thing = [price , profit]
 
 ticket_12_to_15 = [7.5,2.5]
