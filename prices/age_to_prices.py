@@ -3,13 +3,14 @@ from prices.prices_1 import prices
 def age_to_price(age,total_price,prices):
 
     if age <= 15:
-        age_thing = "12 to 15"
+        total_price = + price[0][1]
+    elif age >= 16 and age <=64:
+        total_price =+ price[1][1]
+    elif age >= 65 :
+        total_price =+ price[2][1]
 
-    li = price.index(age_thing)
-    total_price =+ price[li][1]
-    print(total_price)
 
-age = 14
+age = 65
 total_price = 0
 
 if __name__ == "__main__":
