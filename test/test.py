@@ -11,15 +11,20 @@ def ask_not_frist_snack(snacks):
         snack2 = input('what other snacks do you want? ').lower().strip()
         if snack2 in snacks_list:
             snacks.append(snack2)
-            yes = yes_no('do you want more snacks? ')
+            yes = yes_no('do you want more snacks? ','','')
             if yes == True:
                 more = True
                 return more, snacks
+            else :
+                more = False
+                break
 
         elif snack2 in no_words:
+            more = False
             break
         else:
             print('<error> please enter one of the snacks or none')
+    return more, snacks
 
 
 def ask_snacks(snacks):
@@ -28,14 +33,14 @@ def ask_snacks(snacks):
         snack = input("what snack do you want?").lower().strip()
         if snack in snacks_list:
             snacks.append(snack)
-            yes = yes_no('do you just want {} or more snacks'.format(snack),"","")
-            if yes == True:
+            yes = yes_no('do you want more snacks'.format(snack),"","")
+            if yes == False:
                 break
             else:
                 while True:
-                    out = ask_not_frist_snack(snacks)
-                    snacks = out[1]
-                    if out[0] != True:
+                    out,out2 = ask_not_frist_snack(snacks)
+                    snacks = out2
+                    if out != True:
                         break
 
         elif snacks in no_words:

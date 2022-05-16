@@ -13,6 +13,17 @@ def prices():
               ["water",2,0.4]]
     return prices
 
+
+
 if __name__ =="__main__":
     price = prices()
     print(price[0][1])
+
+    for r in range(0,7):
+        row = price[r]
+        try:
+            place = row.index("m&m")
+            print(r)
+        except:
+            print('no')
+    print('1')
