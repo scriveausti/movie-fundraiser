@@ -3,7 +3,7 @@ from basic_functions.y_n import yes_no
 snacks_list = ['popcorn', 'm&ms', 'pita chips']
 no_words = ["nothing", 'none', '']
 yes_words = ['yes', 'y', 'ya']
-more = ['more', 'moresnacks']
+more = ['more', 'more snacks']
 snacks = []
 
 def ask_not_frist_snack(snacks):
