@@ -7,7 +7,7 @@ def prices():
               ["16 to 64",10.5,5.5],
               ["65 and older",6.5,1.5],
               ["popcorn",2.5,0.5],
-              ["m&m",3,0.6],
+              ["m&ms",3,0.6],
               ["pita chips",4.5,0.9],
               ["orange juice",3.25,0.65],
               ["water",2,0.4]]
