@@ -4,6 +4,8 @@ from prices.age_to_prices import age_to_price
 from ask_snacks.snacks_to_total import snacks_total
 from ask_snacks.ask_snacks_1 import ask_snacks
 
+import os
+
 total_price = 0.0
 total_profit = 0.0
 min_age = 12
@@ -16,6 +18,7 @@ age = ask_age(name,min_age,max_age)
 snacks = ask_snacks(snacks)
 (total_price,total_profit) = snacks_total(snacks,total_price,total_profit)
 
+os.system('cls')
 print("price",total_price)
 print("profit",total_profit)
 
